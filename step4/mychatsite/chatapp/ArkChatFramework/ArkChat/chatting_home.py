@@ -91,7 +91,7 @@ class ChattingHomepage(ChatClient):
                         
                         print(results[0][0] in except_tag)
 
-                        if results[0][0]="카테고리":
+                        if results[0][0]=="카테고리":
                             if not 'context_filter' in i or \
                             (userID in self.context and 'context_filter' in i and i['context_filter'] == self.context[userID]):
                                 if show_details: self.logger.debug ('tag:', i['tag'])
@@ -101,7 +101,14 @@ class ChattingHomepage(ChatClient):
                                 return self.context_filter_message
 
                         if results[0][0] in except_tag :
+                            if not 'context_filter' in i or \
+                            (userID in self.context and 'context_filter' in i and i['context_filter'] == self.context[userID]):
+                                if show_details: self.logger.debug ('tag:', i['tag'])
+                                return random.choice(i['responses'])
                             
+                            else:
+                                return self.context_filter_message
+
 
                         # set context for this intent if necessary
                         if 'context_set' in i:
