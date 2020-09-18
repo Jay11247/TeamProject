@@ -8,7 +8,7 @@ Python, Django, JQuery, NLP(konlpy, Tensorflow), HTML, CSS 사용
 
 ## 2. 제작과정 
 
-###2.1 홈페이지 작성
+### 2.1 홈페이지 작성
 
 HTML로 웹브라우저를 구현한 후, w3schools에서 W3.CSS Template을 사용하여 웹페이지를 디자인하였습니다.
 홈페이지 구성은 **홈 / 메뉴얼 / 개발환경 / 팀원소개** 로 나누었고, 오른쪽 하단의 채팅버튼을 클릭하면 챗봇화면으로 이동합니다.
