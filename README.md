@@ -4,14 +4,14 @@
 상점들과 주차정보 등 원하는 정보에 대해 간편하게 질의응답할 수 있도록 하였고, 이를 토대로 쇼핑몰 웹사이트를 제작하였습니다. 
 
 ## 1. 개발환경
-Python                3.6.12
-Django                2.0.2
-gensim                3.8.3
-JPype1                0.7.1
-konlpy                0.5.2
-nltk                  3.4.5
-tensorflow            2.3.0
-Keras                 2.4.3
+Python                3.6.12  
+Django                2.0.2  
+gensim                3.8.3  
+JPype1                0.7.1  
+konlpy                0.5.2  
+nltk                  3.4.5  
+tensorflow            2.3.0  
+Keras                 2.4.3  
 java version "1.8.0_261"
 
 
