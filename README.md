@@ -4,7 +4,16 @@
 상점들과 주차정보 등 원하는 정보에 대해 간편하게 질의응답할 수 있도록 하였고, 이를 토대로 쇼핑몰 웹사이트를 제작하였습니다. 
 
 ## 1. 개발환경
-Python, Django, JQuery, NLP(konlpy, Tensorflow), HTML, CSS 사용
+Python                3.6.12
+Django                2.0.2
+gensim                3.8.3
+JPype1                0.7.1
+konlpy                0.5.2
+nltk                  3.4.5
+tensorflow            2.3.0
+Keras                 2.4.3
+java version "1.8.0_261"
+
 
 ## 2. 제작과정 
 
@@ -12,12 +21,14 @@ Python, Django, JQuery, NLP(konlpy, Tensorflow), HTML, CSS 사용
 
 HTML로 웹브라우저를 구현한 후, w3schools에서 W3.CSS Template을 사용하여 웹페이지를 디자인하였습니다.
 홈페이지 구성은 **홈 / 메뉴얼 / 개발환경 / 팀원소개** 로 나누었고, 오른쪽 하단의 채팅버튼을 클릭하면 챗봇화면으로 이동합니다.
+![page_main](https://user-images.githubusercontent.com/68881138/93714766-c6172980-fb9f-11ea-8b23-c032720b004f.jpg)
+![page_introduce](https://user-images.githubusercontent.com/68881138/93714821-142c2d00-fba0-11ea-9e0d-222840391d5d.jpg)
 
 ### 2.2 크롤링
 
  '스타필드 코엑스몰' 사이트에서 '카테고리 안내' 안에 있는 매장 정보들을 세분화하여 크롤링하였습니다.
 카테고리 구성은 **레스토랑&카페 / 패션의류 / 패션잡화 / 뷰티 / 라이프스타일 / 홈퍼니싱 / 키즈 / 엔터테인먼트 / 슈퍼마켓/ 서비스**로 되어있고
-추가로 주차정보에 대하여도 크롤링하였습니다. 
+추가로 **주차정보**에 대하여도 크롤링하였습니다. 
 
 
 ### 2.3 말뭉치 정의
@@ -70,9 +81,3 @@ patterns: "한식 매장 어디있어?"
 responses: [000, 000, 000, 000, 000, 000, .....]
 ```
 
-### 3.3 원하는 매장 정보 안내받기
-ex) 
-```
-patterns: "계절밥상 가려고"
-response: "계절밥상 B1 02-1670-0865"
-```
